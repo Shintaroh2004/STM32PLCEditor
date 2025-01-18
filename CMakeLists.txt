@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.8)
+cmake_minimum_required(VERSION 3.20)
 
 project(
 	STM32PLCEditor
@@ -14,7 +14,7 @@ if(WIN32)
 	
 	add_library(lib_handler STATIC "src/CommandHandle.cpp" "src/NotifyHandle.cpp")
 	target_include_directories(lib_handler PUBLIC "./include")
-	
+
 	add_executable(${PROJECT_NAME} WIN32 "main.cpp")
 	target_link_libraries(${PROJECT_NAME} PRIVATE lib_ui lib_handler)
 

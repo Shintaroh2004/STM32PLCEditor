@@ -7,7 +7,8 @@
 enum class IDList
 {
 	MAIN_MANU,
-	SUB_MANU_1
+	SUB_MANU_1,
+	BUTTON
 };
 
 class Controlers
@@ -16,6 +17,7 @@ public:
 
 	HMENU hmenu;
 	HMENU hsubmenu1;
+	HWND button;
 
 	Controlers(HWND& m_hwnd,HINSTANCE& hInstance)
 	{
