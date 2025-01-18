@@ -9,7 +9,7 @@ project(
 
 if(WIN32)
 
-	add_library(lib_ui STATIC "src/InitLayout.cpp")
+	add_library(lib_ui STATIC "src/InitLayout.cpp" "src/InitMenu.cpp")
 	target_include_directories(lib_ui PUBLIC "./include")
 	
 	add_library(lib_handler STATIC "src/CommandHandle.cpp" "src/NotifyHandle.cpp")

@@ -12,6 +12,8 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE, PWSTR pCmdLine, int nCmdShow
 
     ShowWindow(win.Window(), SW_MAXIMIZE);
 
+    win.init_UI();
+
     // Run the message loop.
 
     MSG msg = { };

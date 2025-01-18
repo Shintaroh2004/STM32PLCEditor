@@ -56,6 +56,7 @@ public:
         wc.lpfnWndProc = DERIVED_TYPE::WindowProc;
         this->hInstance = hCurInstance;
         wc.hInstance = this->hInstance;
+        wc.hIcon = LoadIcon(NULL, IDI_APPLICATION);
         wc.lpszClassName = ClassName();
 
         RegisterClass(&wc);

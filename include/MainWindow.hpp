@@ -11,18 +11,22 @@ public:
 
     std::shared_ptr<Controlers> controlers;
 
+    void init_UI()
+    {
+        this->controlers = std::shared_ptr<Controlers>(
+            new Controlers(
+                this->m_hwnd,
+                this->hInstance
+            )
+        );
+    }
+
     LPCSTR  ClassName() const { return "Sample Window Class"; }
     LRESULT MainWindow::HandleMessage(UINT uMsg, WPARAM wParam, LPARAM lParam)
     {
         switch (uMsg)
         {
         case WM_CREATE:
-            this->controlers = std::shared_ptr<Controlers>(
-                new Controlers(
-                    this->m_hwnd,
-                    this->hInstance
-                )
-            );
             break;
 
         case WM_DESTROY:
