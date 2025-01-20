@@ -8,7 +8,11 @@ enum class IDList
 {
 	MAIN_MANU,
 	SUB_MANU_1,
-	BUTTON
+	PROJECT_DIR,
+	SYMBOL_PROPERTY,
+	LADDER_FIELD,
+	LIBRARY_LIST,
+	LOG_TAB,
 };
 
 class Controlers
@@ -17,7 +21,11 @@ public:
 
 	HMENU hmenu;
 	HMENU hsubmenu1;
-	HWND button;
+
+	HWND project_dir;
+	HWND symbol_property;
+	HWND ladder_field;
+	HWND library_list;
 
 	Controlers(HWND& m_hwnd,HINSTANCE& hInstance)
 	{
