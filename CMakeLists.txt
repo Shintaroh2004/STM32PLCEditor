@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.6)
 
 project(
-	STM32PLCEditor
+	win32tutorial
 	VERSION 0.0.0
-	DESCRIPTION "PLC editor linked with STM32CubeIDE for WindowsOS."
+	DESCRIPTION "Create gui app for WindowsOS."
 	LANGUAGES CXX
 )
 
